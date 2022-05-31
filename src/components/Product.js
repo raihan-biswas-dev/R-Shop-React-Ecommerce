@@ -1,13 +1,16 @@
-import React from 'react'
-import { Panel, Rate } from 'rsuite'
+import React,{useState} from 'react'
+import { Panel } from 'rsuite'
 import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
 import { AiOutlineShopping } from 'react-icons/ai';
 
 function Product(props) {
+
+    const [activeColor, setActiveAcolor] = useState('')
+
     return (
         <div className='single-product'>
             <Panel bodyFill style={{ display: 'inline-block', width: "100%" }}>
-                <img src={props.img} style={{ width: "100%" }} />
+                <img src={props.img} style={{ width: "100%" }} alt='product-img' />
 
 
 
@@ -35,7 +38,7 @@ function Product(props) {
                     <div className='product-box'>
                         <div className="product-color-box">
                             {props.color.map(item => (
-                                <span className='productColor' style={{ background: `#${item}` }}></span>
+                                <span className='productColor activeColor' style={{ background: `#${item}` }}></span>
                             ))}
 
                         </div>
@@ -54,10 +57,6 @@ function Product(props) {
                     <span className='price'>
                         ${props.price}
                     </span>
-
-                    {/* {props.color.map(item => (
-                        <span className='productColor' style={{ background: `#${item}` }}></span>
-                    ))} */}
                 </Panel>
             </Panel>
         </div>

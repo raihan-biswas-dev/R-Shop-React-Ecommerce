@@ -31,9 +31,9 @@ export default function MainMenu() {
                     </Navbar.Brand>
                     <Nav className='menu-item'>
                         <Nav.Item>Home</Nav.Item>
-                        <Nav.Item>Pages</Nav.Item>
-                        <Nav.Item>Blog</Nav.Item>
-                        <Nav.Item>Contacts</Nav.Item>
+                        <Nav.Item>Product</Nav.Item>
+                        <Nav.Item>Contact</Nav.Item>
+                        <Nav.Item>About Us</Nav.Item>
 
                     </Nav>
                     <Nav pullRight>

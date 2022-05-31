@@ -377,3 +377,17 @@ img {
     width: 643px;
     text-transform: capitalize;
 }
+
+.single-product .rs-panel-header {
+    font-size: 20px;
+}
+
+.banner-text {
+    padding: 110px 0;
+}
+
+
+.single-product .activeColor{
+    border: 2px solid red;
+}
+
